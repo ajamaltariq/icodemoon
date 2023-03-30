@@ -12,9 +12,9 @@
 		"prefix": "if-else-hubl",
 		"body": [
 			"{% if $1 %}",
-			"\t$0",
+			"\\t$0",
 			"{% else %}",
-			"\t$0",
+			"\\t$0",
 			"{% endif %}"
 		],
 		"description": "Log output to console"
@@ -23,7 +23,7 @@
 		"prefix": "macro-hubl",
 		"body": [
 			"{% macro $1() %}",
-			"\t$0",
+			"\\t$0",
 			"{% endmacro %}"
 		],
 		"description": "Log output to console"
@@ -32,7 +32,7 @@
 		"prefix": "for-hubl",
 		"body": [
 			"{% for $1 %}",
-			"\t$0",
+			"\\t$0",
 			"{% endfor %}"
 		],
 		"description": "Log output to console"
