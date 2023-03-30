@@ -1,0 +1,68 @@
+{
+	"if": {
+		"prefix": "if-hubl",
+		"body": [
+			"{% if $1 %}",
+			"\t$0",
+			"{% endif %}"
+		],
+		"description": "Log output to console"
+	},
+	"if-else": {
+		"prefix": "if-else-hubl",
+		"body": [
+			"{% if $1 %}",
+			"\t$0",
+			"{% else %}",
+			"\t$0",
+			"{% endif %}"
+		],
+		"description": "Log output to console"
+	},
+	"macro": {
+		"prefix": "macro-hubl",
+		"body": [
+			"{% macro $1() %}",
+			"\t$0",
+			"{% endmacro %}"
+		],
+		"description": "Log output to console"
+	},
+	"for": {
+		"prefix": "for-hubl",
+		"body": [
+			"{% for $1 %}",
+			"\t$0",
+			"{% endfor %}"
+		],
+		"description": "Log output to console"
+	},
+	"comment": {
+		"prefix": "#-hubl",
+		"body": [
+			"{# $0 #}"
+		],
+		"description": "Log output to console"
+	},
+	"do": {
+		"prefix": "do-hubl",
+		"body": [
+			"{% do $0 %}"
+		],
+		"description": "Log output to console"
+	},
+	"filter": {
+		"prefix": "|length",
+		"body": [
+			"|length"
+		],
+		"description": "Log output to console"
+	},
+	"{{": {
+		"prefix": "{{-hubl",
+		"body": [
+			"{{ $0 }}"
+		],
+		"description": "Log output to console"
+	}
+}
